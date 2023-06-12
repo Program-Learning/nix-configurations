@@ -35,6 +35,12 @@
     LC_TIME = "zh_CN.UTF-8";
   };
 
+  # Enable fcitx input method
+  i18n.inputMethod = {
+    enabled = "fcitx5";
+    fcitx5.addons = with pkgs; [ fcitx5-rime fcitx5-chinese-addons fcitx5-table-extra ];
+  };
+
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
@@ -63,7 +69,7 @@
   };
 
   # Enable touchpad support (enabled default in most desktopManager).
-  services.xserver.libinput.enable = true;
+  # services.xserver.libinput.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
