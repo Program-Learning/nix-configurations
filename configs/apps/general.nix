@@ -1,13 +1,22 @@
 { config, lib, pkgs, ... }:
 
 {
+  nix.settings.substituters = [ "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store" ];
 
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
+  # Allow non-free software
+  nixpkgs.config = {
+    allowUnfree = true;
+    vivaldi = {
+      proprietaryCodecs = true;
+      enableWideVine = true;
+    };
+  };
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    vim
+    ranger
     artha
     wget iw
     neofetch
@@ -31,10 +40,14 @@
     python310 python310.pkgs.pip pipenv
     jadx meld
     go_1_20
-    kitty kitty-themes
     yesplaymusic
     ffmpeg_6-full
-    sublime4
+    php mysql80 apacheHttpd nginxShibboleth
+    onlyoffice-bin
+  ];
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-14.2.9" 
+    "openssl-1.1.1u"
   ];
 
 }
