@@ -16,39 +16,33 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [ ];
   users.users.nixos.packages = with pkgs; [
-        firefox
-      #  thunderbird
-        yesplaymusic
-        clash-verge
-	      sing-box
-        php mysql80 apacheHttpd nginxShibboleth
-        onlyoffice-bin
-        yesplaymusic
-        geogebra6
-        tdesktop qq
-        firefox
-        google-chrome
+        yesplaymusic # Netease music
+        clash-verge sing-box
+        onlyoffice-bin # Office
+        geogebra6 # math software
+        tdesktop qq # communication apps
+        firefox google-chrome # web browsers
         neofetch
-        vlc
-        vim
-        ranger
+        htop
+        vlc # video software
+        vim neovim # file editor
+        ranger dolphin # file browser
+        postman
         artha
         wget iw
         obs-studio grim
         file
         coreutils openssl openssl_legacy
-        neovim
-        dolphin
         git aria
         gcc gdb clang_15 clang-analyzer clang-tools cmake gnumake unzip
-        postman
-        fuse ntfs3g
-        fish
-        android-tools
-        nodejs
-        python310 python310.pkgs.pip pipenv
-        jadx meld
         go_1_20
+        python310 python310.pkgs.pip pipenv
+        nodejs
+        php mysql80 apacheHttpd nginxShibboleth # PHP
+        fuse ntfs3g
+        fish # shell
+        android-tools # adb, fastboot, etc
+        jadx meld
         ffmpeg_6-full
         docker
         remmina
