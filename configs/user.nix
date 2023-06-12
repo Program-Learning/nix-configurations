@@ -17,11 +17,7 @@
       isNormalUser = true;
       description = "nixos";
       extraGroups = [ "networkmanager" "wheel" ];
-      packages = with pkgs; [
-        firefox
-      #  thunderbird
-      #  yesplaymusic
-      ];
+      packages = with pkgs; [ ];
     };
   };
 

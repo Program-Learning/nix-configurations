@@ -14,6 +14,7 @@
       ./configs/user.nix
       ./configs/apps/general.nix
       ./configs/apps/vscode.nix
+      ./configs/apps/proxychains.nix
     ];
 
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.

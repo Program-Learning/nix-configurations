@@ -2,7 +2,7 @@
 
 {
 
-	environment.systemPackages = with pkgs; [
+	users.users.nixos.packages = with pkgs; [
 
 	vscode
 
