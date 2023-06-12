@@ -16,6 +16,7 @@
       ./configs/apps/vscode.nix
       ./configs/apps/proxychains.nix
       ./configs/apps/waydroid.nix
+      ./configs/apps/inputmethod.nix
     ];
 
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
