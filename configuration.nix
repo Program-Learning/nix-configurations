@@ -12,11 +12,15 @@
       ./configs/fonts.nix
       ./configs/general.nix
       ./configs/user.nix
+      ./configs/gpu-acceleration.nix
+      ./configs/desktop-env.nix
       ./configs/apps/general.nix
+      ./configs/apps/inputmethod.nix
       ./configs/apps/vscode.nix
       ./configs/apps/proxychains.nix
+      ./configs/apps/docker.nix
       ./configs/apps/waydroid.nix
-      ./configs/apps/inputmethod.nix
+      ./configs/apps/virtualbox.nix
     ];
 
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -38,19 +42,6 @@
     LC_PAPER = "zh_CN.UTF-8";
     LC_TELEPHONE = "zh_CN.UTF-8";
     LC_TIME = "zh_CN.UTF-8";
-  };
-
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-
-  # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
-
-  # Configure keymap in X11
-  services.xserver = {
-    layout = "us";
-    xkbVariant = "";
   };
 
   security.rtkit.enable = true;

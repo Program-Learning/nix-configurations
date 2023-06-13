@@ -17,6 +17,7 @@
   environment.systemPackages = with pkgs; [ ];
   users.users.nixos.packages = with pkgs; [
         yesplaymusic # Netease music
+		    steam
         clash-verge sing-box
         onlyoffice-bin # Office
         geogebra6 # math software
@@ -27,6 +28,7 @@
         vlc # video software
         vim neovim # file editor
         ranger dolphin # file browser
+		    tmux
         postman
         artha
         wget iw
@@ -39,12 +41,13 @@
         python310 python310.pkgs.pip pipenv
         nodejs
         php mysql80 apacheHttpd nginxShibboleth # PHP
+		    sqlite
         fuse ntfs3g
         fish # shell
         android-tools # adb, fastboot, etc
+		    scrcpy
         jadx meld
         ffmpeg_6-full
-        docker
         remmina
       ];
       
