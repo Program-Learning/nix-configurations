@@ -2,7 +2,6 @@
 
 {
   users.extraGroups.vboxusers.members = [ "nixos" ];
-  # environment.systemPackages = with pkgs; [ virtualbox ];
 
   nixpkgs.config.allowUnfree = true;
   virtualisation.virtualbox.host.enable = true;
