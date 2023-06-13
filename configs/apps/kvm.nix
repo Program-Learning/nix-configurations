@@ -14,8 +14,8 @@
   # Enable Docker
 	virtualisation.docker.enable = true;
 	virtualisation.docker.enableOnBoot = true;
+	users.extraGroups.docker.members = [ "nixos" ];
   
   virtualisation.libvirtd.enable = true;
   virtualisation.libvirtd.qemu.ovmf.enable = true;
-	users.extraGroups.docker.members = [ "nixos" ];
 }

@@ -17,7 +17,6 @@
   environment.systemPackages = with pkgs; [ ];
   users.users.nixos.packages = with pkgs; [
         yesplaymusic # Netease music
-		    steam
         clash-verge sing-box
         onlyoffice-bin # Office
         geogebra6 # math software
@@ -49,6 +48,7 @@
         jadx meld
         ffmpeg_6-full
         remmina
+        docker
       ];
       
   nixpkgs.config.permittedInsecurePackages = [
