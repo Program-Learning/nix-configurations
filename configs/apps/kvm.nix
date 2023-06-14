@@ -9,14 +9,19 @@
   '';
 
   # KVM Software packages
-  users.users.nixos.packages = with pkgs; [ qemu qemu_kvm virt-manager iproute ];
+  users.users.nixos.packages = with pkgs; [
+    qemu
+    qemu_kvm
+    virt-manager
+    iproute
+  ];
 
   # Enable Docker
   virtualisation.docker.enable = true;
   virtualisation.docker.enableOnBoot = true;
   users.extraGroups.docker.members = [ "nixos" ];
   users.extraGroups.libvirtd.members = [ "nixos" ];
-  
+
   virtualisation.libvirtd.enable = true;
   programs.dconf.enable = true;
   virtualisation.libvirtd.qemu.ovmf.enable = true;

@@ -1,13 +1,11 @@
 { config, pkgs, libs, ... }:
 
 {
-  virtualisation = { 
+  virtualisation = {
     waydroid.enable = true;
     lxd.enable = true;
   };
 
-  users.users.nixos.packages = with pkgs; [
-    waydroid
-  ];
+  users.users.nixos.packages = with pkgs; [ waydroid ];
 }
 

@@ -3,9 +3,7 @@
 {
   users.users.nixos.packages = [
     (pkgs.php.buildEnv {
-      extensions = ({ enabled, all }: enabled ++ (with all; [
-        xdebug
-      ]));
+      extensions = ({ enabled, all }: enabled ++ (with all; [ xdebug ]));
       extraConfig = ''
         xdebug.mode=debug
       '';
@@ -17,11 +15,9 @@
   '';
 
   services.httpd.phpPackage = pkgs.php.buildEnv {
-    extensions = ({ enabled, all }: enabled ++ (with all; [
-        xdebug
-    ]));
+    extensions = ({ enabled, all }: enabled ++ (with all; [ xdebug ]));
     extraConfig = ''
-        xdebug.mode=debug
+      xdebug.mode=debug
     '';
   };
 

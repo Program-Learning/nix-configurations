@@ -5,30 +5,30 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      ./configs/boot.nix
-      ./configs/fonts.nix
-      ./configs/general.nix
-      ./configs/user.nix
-      ./configs/gpu-acceleration.nix
-      ./configs/desktop-env.nix
-      ./configs/nur.nix
-      ./configs/apps/general.nix
-      ./configs/apps/nur/wemeet.nix
-      ./configs/apps/inputmethod.nix
-      ./configs/apps/vscode.nix
-      ./configs/apps/proxychains.nix
-      ./configs/apps/kvm.nix
-      ./configs/apps/waydroid.nix
-      ./configs/apps/virtualbox.nix
-      ./configs/apps/steam.nix
-      # ./configs/apps/php.nix
-      # ./configs/apps/lnmp.nix
-      # ./configs/apps/mysqld.nix
-      ./configs/apps/remote_control.nix
-    ];
+  imports = [ # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    ./configs/boot.nix
+    ./configs/fonts.nix
+    ./configs/general.nix
+    ./configs/user.nix
+    ./configs/gpu-acceleration.nix
+    ./configs/desktop-env.nix
+    ./configs/other.nix
+    ./configs/nur.nix
+    ./configs/apps/general.nix
+    ./configs/apps/nur/wemeet.nix
+    ./configs/apps/inputmethod.nix
+    ./configs/apps/vscode.nix
+    ./configs/apps/proxychains.nix
+    ./configs/apps/kvm.nix
+    ./configs/apps/waydroid.nix
+    ./configs/apps/virtualbox.nix
+    ./configs/apps/steam.nix
+    # ./configs/apps/php.nix
+    # ./configs/apps/lnmp.nix
+    # ./configs/apps/mysqld.nix
+    ./configs/apps/remote_control.nix
+  ];
 
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 

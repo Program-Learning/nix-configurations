@@ -1,7 +1,6 @@
-{ config, pkgs, libs, ... }:
-{
+{ config, pkgs, libs, ... }: {
   users.users.nixos.packages = with pkgs; [
-  vscode
+    vscode
     (vscode-with-extensions.override {
       vscodeExtensions = with vscode-extensions; [
         # vscodevim.vim

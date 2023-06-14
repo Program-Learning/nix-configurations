@@ -1,7 +1,8 @@
 { config, lib, pkgs, ... }:
 
 {
-  nix.settings.substituters = [ "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store" ];
+  nix.settings.substituters =
+    [ "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store" ];
 
   # Allow non-free software
   nixpkgs.config = {
@@ -41,6 +42,7 @@
     python310 python310.pkgs.pip pipenv
     nodejs
     # php mysql80 apacheHttpd nginxShibboleth # PHP
+    nixfmt
     sqlite
     fuse ntfs3g
     fish # shell
@@ -50,11 +52,9 @@
     ffmpeg_6-full
     remmina
     docker docker-compose
-      ];
-      
-  nixpkgs.config.permittedInsecurePackages = [
-    "electron-14.2.9" 
-    "openssl-1.1.1u"
   ];
+
+  nixpkgs.config.permittedInsecurePackages =
+    [ "electron-14.2.9" "openssl-1.1.1u" ];
 
 }

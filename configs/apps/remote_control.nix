@@ -1,6 +1,1 @@
-{ config, pkgs, ... }:
-{
-  users.users.nixos.packages = with pkgs; 
-    [
-    ];
-}
+{ config, pkgs, ... }: { users.users.nixos.packages = with pkgs; [ turbovnc ]; }

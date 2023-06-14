@@ -10,9 +10,6 @@
     #   fcitx5-chinese-addons
     # ];
     enabled = "ibus";
-    ibus.engines = with pkgs.ibus-engines; [
-      libpinyin
-      rime
-    ];
+    ibus.engines = with pkgs.ibus-engines; [ libpinyin rime ];
   };
 }
