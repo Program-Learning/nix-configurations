@@ -1,4 +1,4 @@
-{config, pkgs, libs, ...}:
+{ config, pkgs, libs, ... }:
 
 {
   users.extraGroups.vboxusers.members = [ "nixos" ];

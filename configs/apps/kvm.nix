@@ -1,4 +1,4 @@
-{config, pkgs, libs, ...}:
+{ config, pkgs, libs, ... }:
 
 {
   # Intel KVM Options for boot
@@ -8,14 +8,16 @@
     options kvm ignore_msrs=1
   '';
 
-	# KVM Software packages
-	users.users.nixos.packages = with pkgs; [ qemu qemu_kvm virt-manager iproute ];
+  # KVM Software packages
+  users.users.nixos.packages = with pkgs; [ qemu qemu_kvm virt-manager iproute ];
 
   # Enable Docker
-	virtualisation.docker.enable = true;
-	virtualisation.docker.enableOnBoot = true;
-	users.extraGroups.docker.members = [ "nixos" ];
+  virtualisation.docker.enable = true;
+  virtualisation.docker.enableOnBoot = true;
+  users.extraGroups.docker.members = [ "nixos" ];
+  users.extraGroups.libvirtd.members = [ "nixos" ];
   
   virtualisation.libvirtd.enable = true;
+  programs.dconf.enable = true;
   virtualisation.libvirtd.qemu.ovmf.enable = true;
 }

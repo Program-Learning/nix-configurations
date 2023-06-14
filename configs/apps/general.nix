@@ -16,39 +16,40 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [ ];
   users.users.nixos.packages = with pkgs; [
-        yesplaymusic # Netease music
-        clash-verge sing-box
-        onlyoffice-bin # Office
-        geogebra6 # math software
-        tdesktop qq # communication apps
-        firefox google-chrome # web browsers
-        neofetch
-        htop
-        vlc # video software
-        vim neovim # file editor
-        ranger dolphin # file browser
-		    tmux
-        postman
-        artha
-        wget iw
-        obs-studio grim
-        file
-        coreutils openssl openssl_legacy
-        git aria
-        gcc gdb clang_15 clang-analyzer clang-tools cmake gnumake unzip
-        go_1_20
-        python310 python310.pkgs.pip pipenv
-        nodejs
-        php mysql80 apacheHttpd nginxShibboleth # PHP
-		    sqlite
-        fuse ntfs3g
-        fish # shell
-        android-tools # adb, fastboot, etc
-		    scrcpy
-        jadx meld
-        ffmpeg_6-full
-        remmina
-        docker
+    protonup-qt
+    yesplaymusic # Netease music
+    clash-verge sing-box
+    onlyoffice-bin # Office
+    geogebra6 # math software
+    tdesktop qq # communication apps
+    firefox google-chrome # web browsers
+    neofetch
+    htop
+    vlc # video software
+    vim neovim # file editor
+    ranger dolphin # file browser
+    tmux
+    postman
+    artha
+    wget iw
+    obs-studio grim
+    file
+    coreutils openssl openssl_legacy
+    git aria
+    gcc gdb clang_15 clang-analyzer clang-tools cmake gnumake unzip
+    go_1_20
+    python310 python310.pkgs.pip pipenv
+    nodejs
+    # php mysql80 apacheHttpd nginxShibboleth # PHP
+    sqlite
+    fuse ntfs3g
+    fish # shell
+    android-tools # adb, fastboot, etc
+    scrcpy
+    jadx meld
+    ffmpeg_6-full
+    remmina
+    docker docker-compose
       ];
       
   nixpkgs.config.permittedInsecurePackages = [
