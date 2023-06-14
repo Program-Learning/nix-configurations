@@ -29,6 +29,10 @@
       config.enable = true;
       functions.enable = true;
     };
+    shellAbbrs = {
+      proxychain = "proxychains4";
+      proxychains = "proxychains4";
+    };
   };
   users.defaultUserShell = pkgs.fish;
 }
