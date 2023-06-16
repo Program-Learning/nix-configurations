@@ -52,6 +52,9 @@
     ffmpeg_6-full
     remmina
     docker docker-compose
+    distrobox
+    darling-dmg darling
+    motrix
   ];
 
   nixpkgs.config.permittedInsecurePackages =
