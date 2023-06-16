@@ -19,7 +19,7 @@
     ./configs/apps/general.nix
     ./configs/apps/nur/wemeet.nix
     # ./configs/apps/nur/wechat.nix
-    ./configs/apps/inputmethod.nix
+    # ./configs/apps/inputmethod.nix
     ./configs/apps/vscode.nix
     ./configs/apps/proxychains.nix
     ./configs/apps/kvm.nix
