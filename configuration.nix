@@ -26,6 +26,7 @@
     ./configs/apps/waydroid.nix
     ./configs/apps/virtualbox.nix
     ./configs/apps/steam.nix
+    ./configs/apps/wine.nix
     # ./configs/apps/php.nix
     # ./configs/apps/lnmp.nix
     # ./configs/apps/mysqld.nix
