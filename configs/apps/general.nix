@@ -55,6 +55,8 @@
     distrobox
     darling-dmg darling
     motrix
+    gdu
+    dash
   ];
 
   nixpkgs.config.permittedInsecurePackages =
