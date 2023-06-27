@@ -24,6 +24,7 @@
     geogebra6 # math software
     tdesktop qq # communication apps
     firefox google-chrome # web browsers
+    busybox
     neofetch
     htop
     vlc # video software
