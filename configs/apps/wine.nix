@@ -6,8 +6,8 @@
     winetricks
     onscripter-en
     playonlinux
-    bottles
-    bottles-unwrapped
+    # bottles
+    # bottles-unwrapped
     lutris
     lutris-unwrapped
   ];

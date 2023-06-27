@@ -14,6 +14,7 @@
     pipewire
     wireplumber
     swaybg
+    tofi
     waybar
     rofi-wayland
     polkit-kde-agent
@@ -39,6 +40,9 @@
     libnotify
     kitty
     kitty-themes
+
+    adwaita-qt
+    adwaita-qt6
   ];
 
   # Keyboard Map
@@ -72,3 +76,4 @@
     QT_SCALE_FACTOR = "1";
   };
 }
+

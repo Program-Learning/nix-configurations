@@ -2,8 +2,9 @@
 
 {
   imports = [
-    ./gnome.nix
-    # ./hyprland.nix
+    # ./dewm/gnome.nix
+    ./dewm/hyprland.nix
   ];
 }
+
 

@@ -57,9 +57,12 @@
     motrix
     gdu
     dash
+    p7zip
+    unrar-wrapper
+    python2Full
   ];
 
   nixpkgs.config.permittedInsecurePackages =
-    [ "electron-14.2.9" "openssl-1.1.1u" ];
+    [ "electron-14.2.9" "openssl-1.1.1u" "python-2.7.18.6" ];
 
 }
