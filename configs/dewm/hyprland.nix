@@ -43,6 +43,12 @@
 
     adwaita-qt
     adwaita-qt6
+    pavucontrol
+    lxde.lxsession #lxpolkit
+    grim #ScreenShot
+    slurp
+    hyprpicker
+    swappy
   ];
 
   # Keyboard Map

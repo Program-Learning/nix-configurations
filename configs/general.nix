@@ -13,7 +13,7 @@
   # Sound Support
   sound.enable = true;
   hardware.pulseaudio.enable = false;
-
+  
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
@@ -25,3 +25,4 @@
     enableSSHSupport = true;
   };
 }
+
