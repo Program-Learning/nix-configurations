@@ -5,8 +5,8 @@
 
   # Enable GDM DesktopManager
   services.xserver.displayManager.gdm.enable = true;
-  # services.pipewire.enable = true;
-  # services.pipewire.wireplumber.enable = true;
+  services.pipewire.enable = true;
+  services.pipewire.wireplumber.enable = true;
 
   # Gnome Shell Extensions and packages
   environment.systemPackages = with pkgs; [
@@ -43,12 +43,6 @@
 
     adwaita-qt
     adwaita-qt6
-    pavucontrol
-    lxde.lxsession #lxpolkit
-    grim #ScreenShot
-    slurp
-    hyprpicker
-    swappy
   ];
 
   # Keyboard Map

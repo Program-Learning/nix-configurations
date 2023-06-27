@@ -12,12 +12,8 @@
 
   # Sound Support
   sound.enable = true;
-  hardware.pulseaudio.enable = true;
-  hardware.pulseaudio.support32Bit = true;
-  users.extraGroups.audio.members = [ "nixos" ];
-  nixpkgs.config.pulseaudio = true;
-  hardware.pulseaudio.package = pkgs.pulseaudioFull;
-  
+  hardware.pulseaudio.enable = false;
+
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
@@ -29,4 +25,3 @@
     enableSSHSupport = true;
   };
 }
-
