@@ -51,6 +51,7 @@
     swappy
     blueman
     bluez
+    wlogout
   ];
 
   # Keyboard Map

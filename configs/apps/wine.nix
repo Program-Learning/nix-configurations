@@ -5,7 +5,7 @@
     wineWowPackages.waylandFull
     winetricks
     onscripter-en
-    playonlinux
+    # playonlinux
     # bottles
     # bottles-unwrapped
     lutris
