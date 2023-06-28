@@ -38,6 +38,7 @@
     libsForQt5.polkit-kde-agent
     brightnessctl
     libnotify
+    hyprpaper
     kitty
     kitty-themes
 

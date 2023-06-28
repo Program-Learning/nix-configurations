@@ -46,6 +46,7 @@
     nixfmt
     sqlite
     fuse ntfs3g
+    foot # terminal
     fish # shell
     android-tools # adb, fastboot, etc
     scrcpy
@@ -61,6 +62,8 @@
     p7zip
     unrar-wrapper
     python2Full
+    fzf
+    inotify-tools
   ];
 
   nixpkgs.config.permittedInsecurePackages =
