@@ -44,11 +44,13 @@
     adwaita-qt
     adwaita-qt6
     pavucontrol
-    lxde.lxsession #lxpolkit
-    grim #ScreenShot
+    lxde.lxsession # lxpolkit
+    grim # ScreenShot
     slurp
     hyprpicker
     swappy
+    blueman
+    bluez
   ];
 
   # Keyboard Map
@@ -81,5 +83,9 @@
     MOZ_ENABLE_WAYLAND = "1";
     QT_SCALE_FACTOR = "1";
   };
+
+  # Bluetooth
+  services.blueman.enable = true;
+  hardware.bluetooth.enable = true;
 }
 
