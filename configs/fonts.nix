@@ -26,6 +26,13 @@
       jetbrains-mono
       ubuntu_font_family
       nerdfonts
+
+      liberation_ttf
+      fira-code
+      fira-code-symbols
+      mplus-outline-fonts.githubRelease
+      dina-font
+      proggyfonts
     ];
   };
 }

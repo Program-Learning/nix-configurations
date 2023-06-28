@@ -15,7 +15,8 @@
     ./configs/desktop-env.nix
     ./configs/other.nix
     ./configs/nur.nix
-    ./configs/autogc.nix
+    ./configs/AutoGC.nix
+    ./configs/AutoOptimise.nix
     ./configs/apps/general.nix
     ./configs/apps/nur/wemeet.nix
     # ./configs/apps/nur/wechat.nix
