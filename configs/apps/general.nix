@@ -26,7 +26,7 @@
     firefox google-chrome # web browsers
     # busybox
     neofetch
-    htop
+    htop btop
     vlc # video software
     vim neovim # file editor
     ranger dolphin # file browser

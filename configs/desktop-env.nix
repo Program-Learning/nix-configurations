@@ -6,5 +6,3 @@
     ./dewm/hyprland.nix
   ];
 }
-
-

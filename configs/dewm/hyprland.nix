@@ -46,6 +46,8 @@
     adwaita-qt6
     pavucontrol
     lxde.lxsession # lxpolkit
+    # polkit_gnome
+    # deepin.dde-polkit-agent
     grim # ScreenShot
     slurp
     hyprpicker
@@ -53,6 +55,8 @@
     blueman
     bluez
     wlogout
+    playerctl
+    sysfsutils
   ];
 
   # Keyboard Map

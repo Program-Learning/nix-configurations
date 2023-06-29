@@ -26,6 +26,7 @@
     ./configs/apps/kvm.nix
     ./configs/apps/waydroid.nix
     ./configs/apps/virtualbox.nix
+    # ./configs/apps/vmware.nix
     ./configs/apps/steam.nix
     ./configs/apps/vulkan.nix
     ./configs/apps/wine.nix
@@ -33,6 +34,7 @@
     # ./configs/apps/lnmp.nix
     # ./configs/apps/mysqld.nix
     ./configs/apps/remote_control.nix
+    ./configs/nvidia.nix
   ];
 
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
