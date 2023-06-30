@@ -64,6 +64,9 @@
     python2Full
     fzf
     inotify-tools
+    wf-recorder
+    mpv
+    gnome.nautilus
   ];
 
   nixpkgs.config.permittedInsecurePackages =

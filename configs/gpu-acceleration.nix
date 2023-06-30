@@ -2,5 +2,5 @@
 
 {
   # Enable Intel Graphic Drivers
-  #services.xserver.videoDrivers = [ "intel" ];
+  services.xserver.videoDrivers = [ "intel" ];
 }

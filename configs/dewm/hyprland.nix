@@ -15,7 +15,8 @@
     wireplumber
     swaybg
     tofi
-    waybar
+    waybar 
+    eww-wayland
     rofi-wayland
     polkit-kde-agent
     udiskie
@@ -57,6 +58,8 @@
     wlogout
     playerctl
     sysfsutils
+    socat jq
+    wlroots
   ];
 
   # Keyboard Map
