@@ -67,6 +67,7 @@
     wf-recorder
     mpv
     gnome.nautilus
+    python311Packages.gpustat
   ];
 
   nixpkgs.config.permittedInsecurePackages =

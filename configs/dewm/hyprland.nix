@@ -15,7 +15,9 @@
     wireplumber
     swaybg
     tofi
-    waybar 
+    (waybar.overrideAttrs (oldAttrs: {
+      mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true " ];
+    }))
     eww-wayland
     rofi-wayland
     polkit-kde-agent
@@ -58,7 +60,8 @@
     wlogout
     playerctl
     sysfsutils
-    socat jq
+    socat
+    jq
     wlroots
   ];
 
