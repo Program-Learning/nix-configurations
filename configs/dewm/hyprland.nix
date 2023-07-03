@@ -11,6 +11,7 @@
   # Gnome Shell Extensions and packages
   environment.systemPackages = with pkgs; [
     networkmanagerapplet
+    swayidle swaylock
     dunst
     pipewire
     wireplumber
@@ -100,5 +101,6 @@
   # Bluetooth
   services.blueman.enable = true;
   hardware.bluetooth.enable = true;
+  security.pam.services.swaylock = {};
 }
 

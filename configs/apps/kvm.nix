@@ -40,7 +40,7 @@
   };
   services.spice-vdagentd.enable = true;
   boot.kernelModules = ["vfio-pci"];
-  boot.blacklistedKernelModules = ["nouveau"];
+  # boot.blacklistedKernelModules = ["nouveau"];
   boot.kernelParams = ["intel_iommu=on"];
   
   # Enable Docker
