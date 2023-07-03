@@ -1,0 +1,4 @@
+{ config, ... }:
+{
+	powerManagement.cpuFreqGovernor = "conservative";
+}
