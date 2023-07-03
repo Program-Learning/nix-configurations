@@ -21,6 +21,7 @@
     yesplaymusic # Netease music
     clash-verge sing-box
     onlyoffice-bin # Office
+    libreoffice #Office
     geogebra6 # math software
     tdesktop qq # communication apps
     firefox google-chrome # web browsers
@@ -31,6 +32,7 @@
     vim neovim # file editor
     ranger dolphin # file browser
     tmux
+    killall
     postman
     artha
     wget iw
@@ -68,6 +70,8 @@
     mpv
     gnome.nautilus
     python311Packages.gpustat
+    minecraft
+    prismlauncher
   ];
 
   nixpkgs.config.permittedInsecurePackages =

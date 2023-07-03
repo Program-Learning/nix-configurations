@@ -10,6 +10,7 @@
 
   # Gnome Shell Extensions and packages
   environment.systemPackages = with pkgs; [
+    networkmanagerapplet
     dunst
     pipewire
     wireplumber

@@ -8,6 +8,7 @@
   imports = [ # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ./configs/boot.nix
+    ./configs/power_management.nix
     ./configs/fonts.nix
     ./configs/general.nix
     ./configs/user.nix
@@ -19,6 +20,7 @@
     ./configs/AutoOptimise.nix
     ./configs/apps/general.nix
     ./configs/apps/nur/wemeet.nix
+    ./configs/apps/nur/hmcl-bin.nix
     # ./configs/apps/nur/wechat.nix
     # ./configs/apps/inputmethod.nix
     ./configs/apps/vscode.nix

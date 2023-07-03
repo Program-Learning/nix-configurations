@@ -24,6 +24,7 @@
     iproute
     edk2
     OVMFFull
+    x11docker
   ];
 
   virtualisation = {
@@ -45,7 +46,7 @@
   # Enable Docker
   virtualisation.docker.enable = true;
   virtualisation.docker.enableOnBoot = true;
-  users.extraGroups.docker.members = [ "nixos" ];
+  # users.extraGroups.docker.members = [ "nixos" ];
   users.extraGroups.libvirtd.members = [ "nixos" ];
 
 }
