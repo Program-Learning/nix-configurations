@@ -4,6 +4,7 @@
 
   # Enable GDM DesktopManager
   services.xserver = {
+    enable = true;
     # videosDrivers = ["nvidia"];
     displayManager.gdm = {
       enable = true;
