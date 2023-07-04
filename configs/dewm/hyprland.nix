@@ -1,17 +1,23 @@
 { config, lib, pkgs, ... }:
 
 {
-  services.xserver.enable = true;
 
   # Enable GDM DesktopManager
-  services.xserver.displayManager.gdm.enable = true;
+  services.xserver = {
+    # videosDrivers = ["nvidia"];
+    displayManager.gdm = {
+      enable = true;
+      wayland = true;
+    };
+  };
   services.pipewire.enable = true;
   services.pipewire.wireplumber.enable = true;
 
   # Gnome Shell Extensions and packages
   environment.systemPackages = with pkgs; [
     networkmanagerapplet
-    swayidle swaylock
+    swayidle
+    swaylock
     dunst
     pipewire
     wireplumber
@@ -65,6 +71,7 @@
     socat
     jq
     wlroots
+    catppuccin-kvantum
   ];
 
   # Keyboard Map
@@ -80,11 +87,16 @@
       fcitx5-rime
       fcitx5-chinese-addons
       fcitx5-table-extra
+      fcitx5-gtk
     ];
   };
 
   # Enable Hyprland
-  programs.hyprland.enable = true;
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+    nvidiaPatches = true;
+  };
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
 
   environment.variables = {
@@ -101,6 +113,6 @@
   # Bluetooth
   services.blueman.enable = true;
   hardware.bluetooth.enable = true;
-  security.pam.services.swaylock = {};
+  security.pam.services.swaylock = { };
 }
 
