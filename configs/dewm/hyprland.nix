@@ -1,16 +1,6 @@
 { config, lib, pkgs, ... }:
 
 {
-
-  # Enable GDM DesktopManager
-  services.xserver = {
-    enable = true;
-    # videosDrivers = ["nvidia"];
-    displayManager.gdm = {
-      enable = true;
-      wayland = true;
-    };
-  };
   services.pipewire.enable = true;
   services.pipewire.wireplumber.enable = true;
 
