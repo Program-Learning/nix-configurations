@@ -26,6 +26,7 @@
     tdesktop qq # communication apps
     firefox google-chrome # web browsers
     # busybox
+    pciutils
     neofetch
     htop btop
     vlc # video software
@@ -39,7 +40,7 @@
     obs-studio grim
     file
     coreutils openssl openssl_legacy
-    git aria
+    git gitRepo aria
     gcc gdb clang_15 clang-analyzer clang-tools cmake gnumake unzip
     go_1_20
     python310 python310.pkgs.pip pipenv

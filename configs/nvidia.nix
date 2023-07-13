@@ -14,14 +14,22 @@ in {
     enable = true;
     driSupport = true;
     driSupport32Bit = true;
+    extraPackages = with pkgs; [
+      intel-compute-runtime
+      intel-media-driver
+      vaapiIntel
+      vaapiVdpau
+      libvdpau-va-gl
+    ];
   };
 
   # NVIDIA drivers are unfree.
   nixpkgs.config.allowUnfreePredicate = pkg:
-    builtins.elem (lib.getName pkg) [ "nvidia-x11" ];
+    builtins.elem (lib.getName pkg) [ "nvidia-x11" "nvidia-settings" ];
 
   # Tell Xorg to use the nvidia driver
   services.xserver.videoDrivers = [ "nvidia" ];
+  environment.systemPackages = [ nvidia-offload ];
 
   hardware.nvidia = {
 
@@ -45,4 +53,7 @@ in {
       nvidiaBusId = "PCI:1:0:0";
     };
   };
+  # boot.initrd.kernelModules = [ "nvidia" ];
+  # boot.extraModulePackages = [ config.boot.kernelPackages.nvidia_x11 ];
+
 }

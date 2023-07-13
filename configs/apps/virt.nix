@@ -25,6 +25,7 @@
     edk2
     OVMFFull
     x11docker
+    virtiofsd
   ];
 
   virtualisation = {
