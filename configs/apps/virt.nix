@@ -1,6 +1,7 @@
-{ config, pkgs, libs, ... }: 
+{ config, pkgs, libs, ... }:
 
 {
+  imports = [ ./virt-ext.nix ];
   # Intel KVM Options for boot
   boot.extraModprobeConfig = ''
     options kvm_intel nested=1
@@ -48,5 +49,5 @@
   virtualisation.docker.enableOnBoot = true;
   # users.extraGroups.docker.members = [ "nixos" ];
   users.extraGroups.libvirtd.members = [ "nixos" ];
-
+  vfio.enable = true;
 }
