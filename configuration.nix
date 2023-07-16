@@ -20,6 +20,7 @@
     ./configs/AutoGC.nix
     ./configs/AutoOptimise.nix
     ./configs/nur.nix
+    ./configs/apps/services/cpolar.nix
     ./configs/apps/general.nix
     ./configs/apps/nur/wemeet.nix
     ./configs/apps/nur/hmcl-bin.nix
