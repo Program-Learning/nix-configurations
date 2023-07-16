@@ -14,7 +14,7 @@
     ./configs/general.nix
     ./configs/user.nix
     ./configs/desktop-env.nix
-    ./configs/nvidia.nix
+    # ./configs/nvidia.nix
     ./configs/gpu-acceleration.nix
     ./configs/other.nix
     ./configs/AutoGC.nix

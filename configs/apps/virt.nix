@@ -1,4 +1,4 @@
-{ config, pkgs, libs, ... }:
+{ config, pkgs, libs, ... }: 
 
 {
   # Intel KVM Options for boot
@@ -40,10 +40,9 @@
     spiceUSBRedirection.enable = true;
   };
   services.spice-vdagentd.enable = true;
-  boot.kernelModules = ["vfio-pci"];
-  boot.blacklistedKernelModules = ["nouveau"];
-  boot.kernelParams = ["intel_iommu=on"];
-  
+  boot.kernelModules = [ "vfio-pci" ];
+  boot.kernelParams = [ "intel_iommu=on" ];
+
   # Enable Docker
   virtualisation.docker.enable = true;
   virtualisation.docker.enableOnBoot = true;
