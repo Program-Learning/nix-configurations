@@ -42,7 +42,7 @@
   };
   services.spice-vdagentd.enable = true;
   boot.kernelModules = [ "vfio-pci" ];
-  boot.kernelParams = [ "intel_iommu=on" ];
+  boot.kernelParams = [ "intel_iommu=on" "hugepagesz=1G" "hugepages=4" ];
 
   # Enable Docker
   virtualisation.docker.enable = true;
