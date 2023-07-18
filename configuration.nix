@@ -41,7 +41,7 @@
     # ./configs/apps/mysqld.nix
     ./configs/apps/remote_control.nix
   ];
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [ "nix-command" ];
 
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
