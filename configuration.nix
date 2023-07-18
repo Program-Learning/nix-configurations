@@ -14,32 +14,34 @@
     ./configs/general.nix
     ./configs/user.nix
     ./configs/desktop-env.nix
-    # ./configs/nvidia.nix
+    ./configs/nvidia.nix
     ./configs/gpu-acceleration.nix
     ./configs/other.nix
     ./configs/AutoGC.nix
     ./configs/AutoOptimise.nix
-    ./configs/nur.nix
+    # ./configs/nur.nix
     ./configs/apps/services/cpolar.nix
     ./configs/apps/general.nix
-    ./configs/apps/nur/wemeet.nix
-    ./configs/apps/nur/hmcl-bin.nix
+    # ./configs/apps/nur/wemeet.nix
+    # ./configs/apps/nur/hmcl-bin.nix
     # ./configs/apps/nur/wechat.nix
     # ./configs/apps/inputmethod.nix
     ./configs/apps/vscode.nix
     ./configs/apps/proxychains.nix
     ./configs/apps/virt.nix
+    ./configs/apps/adb.nix
     ./configs/apps/waydroid.nix
     ./configs/apps/virtualbox.nix
     # ./configs/apps/vmware.nix
     ./configs/apps/steam.nix
     ./configs/apps/vulkan.nix
-    ./configs/apps/wine.nix
+    # ./configs/apps/wine.nix
     # ./configs/apps/php.nix
     # ./configs/apps/lnmp.nix
     # ./configs/apps/mysqld.nix
     ./configs/apps/remote_control.nix
   ];
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 

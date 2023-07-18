@@ -17,19 +17,10 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [ ];
   users.users.nixos.packages = with pkgs; [
-    protonup-qt
-    yesplaymusic # Netease music
-    clash-verge sing-box
-    onlyoffice-bin # Office
-    libreoffice #Office
-    geogebra6 # math software
-    tdesktop qq # communication apps
-    firefox google-chrome # web browsers
     # busybox
     pciutils
     neofetch
     htop btop
-    vlc # video software
     vim neovim # file editor
     ranger dolphin # file browser
     tmux
@@ -37,7 +28,6 @@
     postman
     artha
     wget iw
-    obs-studio grim
     file
     coreutils openssl openssl_legacy
     git gitRepo aria
@@ -55,11 +45,9 @@
     scrcpy
     jadx meld
     ffmpeg_6-full
-    remmina
     docker docker-compose
     distrobox
     darling-dmg darling
-    motrix
     gdu
     dash
     p7zip
@@ -67,12 +55,8 @@
     python2Full
     fzf
     inotify-tools
-    wf-recorder
-    mpv
-    gnome.nautilus
     python311Packages.gpustat
-    minecraft
-    prismlauncher
+
   ];
 
   nixpkgs.config.permittedInsecurePackages =

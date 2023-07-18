@@ -53,7 +53,7 @@ in {
       nvidiaBusId = "PCI:1:0:0";
     };
   };
-  boot.blacklistedKernelModules = [ "nouveau" ];
+  # boot.blacklistedKernelModules = [ "nouveau" ];
   programs.hyprland.nvidiaPatches = true;
 
   boot.initrd.kernelModules = [ "nvidia" ];

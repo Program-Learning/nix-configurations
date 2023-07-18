@@ -14,7 +14,7 @@
   users.users.nixos.packages = with pkgs; [
     qemu
     qemu_kvm
-    virt-manager
+    virt-manager virt-manager-qt
     virt-viewer
     spice
     spice-gtk
@@ -42,12 +42,12 @@
   };
   services.spice-vdagentd.enable = true;
   boot.kernelModules = [ "vfio-pci" ];
-  boot.kernelParams = [ "intel_iommu=on" "hugepagesz=1G" "hugepages=4" ];
+  boot.kernelParams = [ "intel_iommu=on" ];
 
   # Enable Docker
   virtualisation.docker.enable = true;
   virtualisation.docker.enableOnBoot = true;
   # users.extraGroups.docker.members = [ "nixos" ];
   users.extraGroups.libvirtd.members = [ "nixos" ];
-  vfio.enable = true;
+  vfio.enable = false;
 }

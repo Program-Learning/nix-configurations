@@ -5,7 +5,7 @@
     xrdp
     libvncserver
     gnome.gnome-remote-desktop
-    wayvnc
+    # wayvnc
     novnc
   ];
   services.xrdp.openFirewall = true;
